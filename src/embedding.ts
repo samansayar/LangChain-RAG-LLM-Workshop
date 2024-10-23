@@ -5,7 +5,12 @@ import { HfInference } from "@huggingface/inference";
 
 const hf = new HfInference(process.env.HUGGINGFACE_API_KEY);
 
-export async function getEmbeddings(content: string, roomName: string) {
+type TData = {
+    content: string,
+    roomName: string
+}
+
+export async function getEmbeddings({ content, roomName }: TData) {
     const embeddingResponse = await hf.featureExtraction({
         model: 'sentence-transformers/all-mpnet-base-v2',
         inputs: content,
@@ -26,7 +31,7 @@ export async function getEmbeddings(content: string, roomName: string) {
     }
 
     // Store the embedding in the database
-    const storedEmbedding = await prisma.roomChat.upsert({
+    await prisma.roomChat.upsert({
         where: { roomName },
         update: {
             embeddings: {
@@ -41,9 +46,5 @@ export async function getEmbeddings(content: string, roomName: string) {
         }
     });
 
-    return { ok: true, message: `Successfully stored embedding with ID: ${storedEmbedding.id}` }
+    return { ok: true, message: 'Successfully stored!' }
 }
-
-// run getEmbeddings
-// getEmbeddings('Welcome to my channel', process.argv[2]);
-//  Welecome to my channel
