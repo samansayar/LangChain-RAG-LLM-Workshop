@@ -17,7 +17,8 @@
         "@langchain/openai": "^0.3.11",
         "@prisma/client": "^5.21.1",
         "express": "^4.21.1",
-        "langchain": "^0.3.3"
+        "langchain": "^0.3.3",
+        "uuid": "^10.0.0"
     },
     "devDependencies": {
         "@types/bun": "latest",

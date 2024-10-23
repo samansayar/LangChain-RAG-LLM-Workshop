@@ -177,4 +177,4 @@ dist
 
 
 src/server.ts
-./bun.lockb
+bun.lockb

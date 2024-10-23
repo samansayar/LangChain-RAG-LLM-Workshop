@@ -3,8 +3,8 @@
 Complete these tasks in order to gain a comprehensive understanding of LangChain, RAG, and LLMs.
 
 ## 1. Setup and Introduction
-- [ ] Install dependencies and set up TypeScript configuration
-- [ ] Create a simple "Hello, World!" script using LangChain with TypeScript
+- [x] Install dependencies and set up TypeScript configuration
+- [x] Create a simple "Hello, World!" script using LangChain with TypeScript
 
 ## 2. LangChain Basics
 - [ ] Implement a basic LLM chain using TypeScript
