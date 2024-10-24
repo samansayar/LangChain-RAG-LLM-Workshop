@@ -7,8 +7,8 @@ Complete these tasks in order to gain a comprehensive understanding of LangChain
 - [x] Create a simple "Hello, World!" script using LangChain with TypeScript
 
 ## 2. LangChain Basics
-- [ ] Implement a basic LLM chain using TypeScript
-- [ ] Create a custom PromptTemplate
+- [x] Implement a basic LLM chain using TypeScript
+- [x] Create a custom PromptTemplate and use it in a chain
 
 ## 3. Working with Vector Stores
 - [ ] Set up a local vector store (e.g., HNSWLib) with TypeScript
