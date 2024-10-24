@@ -23,7 +23,7 @@ Perfect for beginners and experts alike, this hands-on workshop provides practic
 
 ## Quick Start Guide
 
-1. Clone this repository: `git clone https://github.com/yourusername/LangChain-RAG-LLM-Workshop.git`
+1. Clone this repository: `git clone https://github.com/samansayar/LangChain-RAG-LLM-Workshop.git`
 2. Explore `TASKS.md` for the detailed learning roadmap
 3. Begin with Task 1 and progress at your own pace
 4. Utilize provided resources and documentation links
